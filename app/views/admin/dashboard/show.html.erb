@@ -1,5 +1,26 @@
 <h1>Stats</h1>
-<h4> There are <%= @product_count =%> products currrently in stock. </h4>
-<h4> There are <%= @category_count =%> categories. </h4>
+
+<div class="panel panel-default items">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan="2">Categories </td>
+          <td> <%= @category_count =%> </td>
+        </tr>
+        <tr>
+          <th colspan="2">Products </td>
+          <td> <%= @product_count =%> </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+
 
 
